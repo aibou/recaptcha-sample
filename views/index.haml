@@ -1,0 +1,8 @@
+%html
+  %head
+    %title reCAPTCHA test
+    %script{src: 'https://www.google.com/recaptcha/api.js'}
+  %body
+    %form{method: 'POST', action: '/send'}
+      %div.g-recaptcha{'data-sitekey' => '6LflewQTAAAAAPNredkg-B0-zA-kC-v6on0TN6Nd'}
+      %input{type: :submit, value: '送信'}
